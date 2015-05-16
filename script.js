@@ -9,16 +9,20 @@ var x_wins = 0;
 var o_wins = 0;
 var count = 0;
 
-
+// $('.ds').click(function(){
+//   $(this).removeClass('<img class = "ds" src="rsz_deathstar.png" />')
+//   $(this).html('<img class = "ds" src="death-star.png" />');
+// })
 // Placement function
     $('div.btn').click(function(){
      if ($(this).hasClass('.disable'))
   {
     alert('Already selected');
     count --;
-    
+
 
   }
+
 
     if(last_turn==imagex) {
         $(this).html('<img class= "playo" src="jedilightsabre.png" />').addClass('animated swing');
